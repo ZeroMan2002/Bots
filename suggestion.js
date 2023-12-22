@@ -24,7 +24,7 @@ client.on('message', (message) => {
       const suggestion = args.join(' ');
       if (suggestion) {
         // Do something with the suggestion (e.g., send it to another channel)
-        const suggestionChannel = client.channels.cache.get('https://discordapp.com/api/webhooks/1187551626802765824/Laecw0myaB3l4otbaBmpdua9uXZvHXYeXrG26tA-cW1B1Lm5rVVrEGnQMYlEONqA0zUm'); // Replace CHANNEL_ID with your channel ID
+        const suggestionChannel = client.channels.cache.get('1187551626802765824'); // Replace CHANNEL_ID with your channel ID
         suggestionChannel.send(`New Suggestion: ${suggestion}`);
         message.reply('Thanks for your suggestion!');
       } else {
